@@ -1,6 +1,6 @@
 # Events Exercises
 
-_Create a separate HTML, JS, and (if necessary) CSS file for each of these exercises._
+_Create a separate HTML, JS, and (if necessary) CSS file for each of these exercisess._
 
 ## Exercise 1: Loaded!
 
