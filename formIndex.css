@@ -1,0 +1,28 @@
+body {
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.container {
+  grid-column-start: 2;
+}
+
+.myForm {
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 10px;
+}
+
+.quizTopic {
+  grid-column: 1 / span 2;
+}
+
+.question {
+  grid-column: 1 / span 2;
+}
