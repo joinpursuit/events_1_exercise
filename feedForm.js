@@ -2,11 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let finished = document.querySelector(".finished")
     let place = document.querySelector(".place")
-    let placeChoice = place.options[place.selectedIndex].value
     let sleep = document.querySelector(".sleepConditions")
-    let sleepChoice = sleep.options[sleep.selectedIndex].value
     let food = document.querySelector(".food")
-    let foodChoice = food.options[food.selectedIndex].value
     let animal = document.querySelector(".animalOutcome")
 
     const animalCountObj = {
@@ -17,47 +14,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function animalCounter () {
-        switch (placeChoice) {
+        switch (place.options[place.selectedIndex].value) {
             case "train": 
-            animalCountObj['Bronx Rat']++;
-            break;
+                animalCountObj['Bronx Rat']++;
+                break;
             case "plane": 
-            animalCountObj['Manhattan Flying Rat']++;
-            break;
+                animalCountObj['Manhattan Flying Rat']++;
+                break;
             case "tree": 
-            animalCountObj['Brooklyn Squirrel']++;
-            break;
+                animalCountObj['Brooklyn Squirrel']++;
+                break;
             case "bath": 
-            animalCountObj['Staten Island Turtle']++;
-            break;
+                animalCountObj['Staten Island Turtle']++;
+                break;
         }
-        switch (sleepChoice) {
+        switch (sleep.options[sleep.selectedIndex].value) {
             case "hotWet": 
-            animalCountObj['Bronx Rat']++;
-            break;
+                animalCountObj['Bronx Rat']++;
+                break;
             case "coldDry": 
-            animalCountObj['Manhattan Flying Rat']++;
-            break;
+                animalCountObj['Manhattan Flying Rat']++;
+                break;
             case "coolDry": 
-            animalCountObj['Brooklyn Squirrel']++;
-            break;
+                animalCountObj['Brooklyn Squirrel']++;
+                break;
             case "coldWet": 
-            animalCountObj['Staten Island Turtle']++;
-            break;
+                animalCountObj['Staten Island Turtle']++;
+                break;
         }
-        switch (foodChoice) {
+        switch (food.options[food.selectedIndex].value) {
             case "cheese": 
-            animalCountObj['Bronx Rat']++;
-            break;
+                animalCountObj['Bronx Rat']++;
+                break;
             case "bread": 
-            animalCountObj['Manhattan Flying Rat']++;
-            break;
+                animalCountObj['Manhattan Flying Rat']++;
+                break;
             case "nuts": 
-            animalCountObj['Brooklyn Squirrel']++;
-            break;
+                animalCountObj['Brooklyn Squirrel']++;
+                break;
             case "seaweed": 
-            animalCountObj['Staten Island Turtle']++;
-            break;
+                animalCountObj['Staten Island Turtle']++;
+                break;
         }
     }
 
@@ -75,11 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return animalResult;
     }
 
+    function resetAnimalCount () {
+       let reset = Object.keys(animalCountObj).forEach((key) => {
+            animalCountObj[key] = 0
+        });
+        return reset;
+    }
+
     finished.addEventListener('click', (event) => {
         animalCounter();
         animal.innerHTML = `You are a ${chosenAnimal()}`;
-        event.preventDefault()
-        console.log(Object.values(animalCountObj))
+        event.preventDefault();
+        resetAnimalCount();
     })
     
 })
