@@ -1,5 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  debugger;
-  let alertUser = alert('The page has loaded user!');
-  alertUser;
+document.addEventListener('DOMContentLoaded', e => {
+  // e.preventDefault();
+  // const alertUser = () => {
+  alert('The page has loaded user!');
+  // };
+
+  // alertUser();
 });
