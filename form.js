@@ -5,17 +5,22 @@ document.addEventListener("DOMContentLoaded", () => {
   //   node.classList.add("chosen")
   // }
 
-console.log(document.querySelector(".choice").innerText);
+// console.log(document.querySelector(".choice").innerText);
 
-  // let button = document.querySelectorAll(".choice");
+  // let q1 = document.querySelectorAll("h1");
   //
-  // button.addEventListener("click", (event) => {
-  //   debugger
-  //   showSelection(button)
+  // q1.addEventListener("click", (event) => {
+  //      q1.style.backgroundColor = "yellow"
+  //   // debugger
+  //   // showSelection(button)
+  // });
 
+let choice = document.querySelectorAll(".choice");
+console.log(choice).innerHTML;
+let result = document.querySelector(".results").innerHTML;
+console.log(result);
 
-
-    // button.style.backgroundColor = "yellow"
+  // button.style.backgroundColor = "yellow"
 
   // let results = document.querySelectorAll(".results");
   //
@@ -34,10 +39,29 @@ console.log(document.querySelector(".choice").innerText);
   //
   // }
 
-
+  // let objResults = {
+  //   1a: 0,
+  //   1b: 0,
+  //   1c: 0,
+  //   1d: 0,
+  //   2a: 0,
+  //   2b: 0,
+  //   2c: 0,
+  //   2d: 0,
+  //   3a: 0,
+  //   3b: 0,
+  //   3c: 0,
+  //   3d: 0,
+  //   4a: 0,
+  //   4b: 0,
+  //   4c: 0,
+  //   4d: 0,
+  // };
 
 
 
 
 
 })
+
+//
