@@ -1,6 +1,9 @@
-.idk {
+body {
   border: 2px solid gray;
 }
+ .a, .b, .c, .d {
+   text-align: center;
+ }
 .pollOne {
   border: 2px solid gray;
   padding: 10px;
