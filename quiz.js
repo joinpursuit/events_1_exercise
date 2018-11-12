@@ -5,23 +5,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let quiz = document.querySelector('.quiz');
 
-  let aniMan = document.querySelector('.anime_manga');
-  let aniMan_Op = aniMan.options[aniMan.selectedIndex].id;
-  let ice = document.querySelector('.ice_cream');
-  let ice_Op = ice.options[ice.selectedIndex].id;
-  let catDog = document.querySelector('.cat_or_dog');
-  let catDog_Op = catDog.options[catDog.selectedIndex].id;
-  let onions = document.querySelector('.onions');
-  let onions_Op = onions.options[onions.selectedIndex].id;
-  let earlyRiser = document.querySelector('.early_Riser');
-  let earlyRise_Op = earlyRiser.options[earlyRiser.selectedIndex].id;
-  let candyCorn = document.querySelector('.candy_Corn');
-  let candyCorn_Op = candyCorn.options[candyCorn.selectedIndex].id;
 
   let count = 0;
 
+  quiz.addEventListener('change', (event) => {
+    count += Number(event.target.value);
+  })
 
-  const ansCount = () => {
+  theEnd.addEventListener('click', (event) => {
+    result.innerHTML = count;
+    event.preventDefault();
+    console.log(count);
+
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+  // let aniMan = document.querySelector('.anime_manga');
+  // let aniMan_Op = aniMan.options[aniMan.selectedIndex].id;
+  // let ice = document.querySelector('.ice_cream');
+  // let ice_Op = ice.options[ice.selectedIndex].id;
+  // let catDog = document.querySelector('.cat_or_dog');
+  // let catDog_Op = catDog.options[catDog.selectedIndex].id;
+  // let onions = document.querySelector('.onions');
+  // let onions_Op = onions.options[onions.selectedIndex].id;
+  // let earlyRiser = document.querySelector('.early_Riser');
+  // let earlyRise_Op = earlyRiser.options[earlyRiser.selectedIndex].id;
+  // let candyCorn = document.querySelector('.candy_Corn');
+  // let candyCorn_Op = candyCorn.options[candyCorn.selectedIndex].id;
+
+
+
+
     // switch (aniMan_Op) {
     //   case 'yes':
     //   count += 10;
@@ -105,20 +130,3 @@ document.addEventListener('DOMContentLoaded', () => {
     //     count += 10;
     //       break;
     //   }
-
-    quiz.addEventListener('change', (event) => {
-      event.target.value += count;
-    })
-
-
-  }
-
-  theEnd.addEventListener('click', (event) => {
-    ansCount();
-    result.innerHTML = count;
-    event.preventDefault();
-    console.log(count);
-
-  })
-
-});
