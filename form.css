@@ -1,0 +1,21 @@
+.killed{
+  width: 500px;
+  height: 500px;
+  background-image: url("http://cdn01.cdn.justjared.com/wp-content/uploads/2008/04/shia-dead/shia-labeouf-dead-new-york-i-love-you-04.jpg");
+  background-position: center;
+  background-size: contain;
+}
+.owe{
+  width: 500px;
+  height: 500px;
+  background-image: url("https://i.kym-cdn.com/entries/icons/original/000/020/700/tumblr_nlwvck3niG1tbiv8po1_540.jpg");
+  background-position: center;
+  background-size: contain;
+}
+.died{
+  width: 500px;
+  height: 500px;
+  background-image: url("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+  background-position: center;
+  background-size: contain;
+}
