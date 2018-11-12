@@ -22,54 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {id: "a4c", comment: " and you are obsessed with your privacy."},
     {id: "a4d", comment: " and you are very practical."}
   ]
-  // debugger
-  // function showSelection(node) {
-  //   node.classList.remove("choice")
-  //   node.classList.add("chosen")
-  // }
-
-// console.log(document.querySelector(".choice").innerText);
-
-  // let q1 = document.querySelectorAll("h1");
-  //
-
-
-
-
-// let choice = document.querySelectorAll(".choice");
-// console.log(choice).innerText;
-// let resultDiv = document.querySelector(".results").innerHTML;
-// console.log(resultDiv);
-
-
-
-  // button.style.backgroundColor = "yellow"
-
-
-
-
-
-  // let button = document.querySelectorAll("button");
-  //
-  // button.addEventListener("click", (event) => {
-  //   // button.style.backgroundColor = "yellow"
-  //
-  // })
-
-
-
-// let body = document.querySelector("body");
-// body.addEventListener("click", event => {
-//   // console.log("CURRENT TARGET 3", event.currentTarget);
-//   // event.target.style = "color: red"
-//
-//   // console.log('QUERY SELECTOR FOR BUTTON',button)
-//   // console.log('ATTEMPT ARRAY', Array(...button))
-//
-// });
 
 // //------------------------------------
-// //change background color on click:-------------------------------
+// //change background color on click: -------------------------------
 let button = document.querySelectorAll("button");
 let buttonArray = Array(...button) //make array out of all the buttons.
 
@@ -84,32 +39,12 @@ buttonArray.forEach(button => {
 
   })
 })
-// // //----------------------------------
-// //match id clicked to id.comment in array of objects
-//
-// function findID (array, id) {
-//   let resultsString = "";
-//   for (let i = 0; i < array.length; i++) {
-//     let idArray = array[i].id;
-//     let comment = array[i].comment;
-//   //   if (id) {
-//   //
-//       resultsString.push(array[i])
-//   //   }
-//
-//   console.log(id, ": ", comment);
-//   console.log(1, 2, 3);
-//
-//   }
-// }
-
-// findID(objEvaluation, a1a)
 
 
 //------------------------------------
 // on clicking ".choice" option, it will link , via id, to corresponding evaluation comment:-----------------------------
 
-// function findID () {
+
   let choice = document.querySelectorAll(".choice");
   let results = document.querySelector(".results");
 
@@ -135,92 +70,30 @@ buttonArray.forEach(button => {
         console.log("invalid element");
       }
 
-  function findID(){
-    console.log("this:" , resultString);
+    function findID(){
+      console.log("My resultString:" , resultString);
+      resultString;
+    }
+    findID()
 
-  }
-
-  findID()
-// console.log("this is my resultString", resultString);
-      // console.log(choiceContent, "and id: ", id);
     })
 
     // console.log(choiceContent);
     // console.log(id);
 
   })
-// }
-
 
 //------------------------------
 //show results div:
   function showResultDiv (node) {
     node.style.display = "inline";
+    results.innerHTML = resultString;
   }
 //------------------------------
 // on click, these functions happen:
-let clickMe = document.querySelector(".clickMe")
-clickMe.addEventListener("click", (event) => {
-
-    showResultDiv(results)
-
-
-    results.innerHTML = resultString;
-    // findID()
+  let clickMe = document.querySelector(".clickMe")
+  clickMe.addEventListener("click", (event) => {
+      showResultDiv(results)
+  })
 
 })
-//------------------------------
-
-
-
-
-// listOfComments.forEach
-//   console.log(listOfComments[i].includesid);
-//
-//
-//
-// //
-//
-//   let array = [
-//     {id: 1, comment: "This is bad"},
-//     {id: 2, comment: "This is good"}
-//   ]
-//
-//   const filterWord = (arr, badWord) => {
-//     let answer = [];
-//     for (let i = 0; i < arr.length; i++) {
-//       let comment = arr[i].comment;
-//       let splitComment = comment.split(" ");
-//       let okToPush = true;
-//       for (let j = 0; j < splitComment.length; j++) {
-//         if (badWord[splitComment[j]]) {
-//           okToPush = false;
-//         }
-//       }
-//
-//       if(okToPush) {
-//         answer.push(arr[i])
-//       }
-//     }
-//     return answer;
-//   }
-//
-//
-// //
-//
-//   let body = document.querySelector("body");
-// body.addEventListener("click", event => {
-//   console.log("CURRENT TARGET 3", event.currentTarget);
-//   event.target.style = "color: red"
-//   debugger;
-// });
-
-
-})
-
-
-
-//scrap:---------------------
-// function changeColor(node) {
-//   node.style.backgroundColor = "green"
-// }
