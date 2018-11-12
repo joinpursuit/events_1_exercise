@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(num);
 
     let timer = setInterval(() => {
-      count.innerText = `${num}`;
       num--;
+      count.innerText = `${num}`;
       console.log(num);
       if (num === 0) {
         clearInterval(timer);

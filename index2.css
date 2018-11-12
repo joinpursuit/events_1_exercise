@@ -1,9 +1,18 @@
+* {
+  text-align: center;
+  background-color: grey;
+  font-family: sans-serif;
+}
+
 .jack-hiding {
   height: 500px;
   width: 500px;
   background-image: url("http://toysforprefer.com/wp-content/uploads/2018/01/classic-jester-jack-in-the-box-toy-regarding-jack-in-the-box-toy-closed.gif");
   background-position: center;
   background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .jack-revealed {
@@ -13,6 +22,9 @@
   background-position: center;
   background-size: contain;
   background-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .freeTheJack {
