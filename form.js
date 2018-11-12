@@ -109,8 +109,9 @@ buttonArray.forEach(button => {
 //------------------------------------
 // on clicking ".choice" option, it will link , via id, to corresponding evaluation comment:-----------------------------
 
-function findID () {
+// function findID () {
   let choice = document.querySelectorAll(".choice");
+  let results = document.querySelector(".results");
 
   let choiceArray = Array(...choice)
 
@@ -134,6 +135,13 @@ function findID () {
         console.log("invalid element");
       }
 
+  function findID(){
+    console.log("this:" , resultString);
+
+  }
+
+  findID()
+// console.log("this is my resultString", resultString);
       // console.log(choiceContent, "and id: ", id);
     })
 
@@ -141,8 +149,7 @@ function findID () {
     // console.log(id);
 
   })
-
-}
+// }
 
 
 //------------------------------
@@ -153,12 +160,13 @@ function findID () {
 //------------------------------
 // on click, these functions happen:
 let clickMe = document.querySelector(".clickMe")
-
 clickMe.addEventListener("click", (event) => {
-  let results = document.querySelector(".results");
 
     showResultDiv(results)
-    resultString
+
+
+    results.innerHTML = resultString;
+    // findID()
 
 })
 //------------------------------
