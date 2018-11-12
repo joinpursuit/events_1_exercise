@@ -5,6 +5,9 @@
   background-position: center;
   background-size: contain;
 }
+.listing{
+  list-style: none;
+}
 .changes{
   background-image: url("https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif");
 }

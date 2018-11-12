@@ -8,15 +8,63 @@
   </head>
   <body>
 
-    <form>
+    <form class="quizlet">
       <h1>Where are you from</h1>
+            <ol class="listing">
 
-      <ol>
-        <li id="quest1"></li>
-        <li id="quest2"></li>
+              <label for="question1">Which food do you like?</label>
+              <li id="ans1">
+                <input type="radio" id="quest1ans1" name="reponse1"
+                value="1a">Pizza</input>
+                <input type="radio" id="quest1ans2" name="response2" value="2a">Hamburger</input>
+                <input type="radio" id="quest1ans3" name="response3" value="3a">Quesadilla</input>
+                <input type="radio" id="quest1ans4" name="response4" value="4a">Mofongo</input>
+              </li>
+
+              <br>
+
+              <label for="question2">Which appetizer do you prefer</label>
+              <li id="ans2">
+                <input type="radio" id="quest2ans1" name="response5"
+                value="1a">Breadsticks</input>
+                <input type="radio" id="quest2ans2" name="response6" value="2a">Buffalo Wings</input>
+                <input type="radio" id="quest2ans3" name="response7" value="3a">Nachos</input>
+                <input type="radio" id="quest2ans4" name="response8" value="4a">Fritura</input>
+              </li>
+
+              <br>
+
+              <label for="question3">Which drink do you prefer</label>
+              <li id="ans3">
+                <input type="radio" id="quest3ans1" name="response9"
+                value="1a">Wine</input>
+                <input type="radio" id="quest3ans2" name="response10" value="2a">Coca Cola</input>
+                <input type="radio" id="quest3ans3" name="response11" value="3a">Jarritos</input>
+                <input type="radio" id="quest3ans4" name="response12" value="4a">Malta</input>
+              </li>
+
+              <br>
+
+              <label for="question4">Which dessert do you prefer</label>
+              <li id="ans4">
+                <input type="radio" id="quest4ans1" name="reponse13"
+                value="1a">Zepoles</input>
+                <input type="radio" id="quest4ans2" name="reponse14" value="2a">Funnel Cake</input>
+                <input type="radio" id="quest4ans3" name="reponse15" value="3a">Churros</input>
+                <input type="radio" id="quest4ans4" name="reponse16" value="4a">Habichuela con Dulce</input>
+              </li>
+
+              <h2 class="finalAnswer"></h2>
+
+            </ol>
+
+
+      <!-- <ol>
+        <li id="quest1"> Which appetizer do you prefer?</li>
+        <li id="quest2">Which </li>
         <li id="quest3"></li>
         <li id="quest4"></li>
-      </ol>
+      </ol> -->
 
     <p> <button class="quiz" type="submit">Submit Quiz</button> </p>
 

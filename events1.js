@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   // window.alert('The page has loaded')
 
-  let question1 = window.prompt('Which food do you like')
-  let answer1 = document.getElementById('quest1')
+
+  let answer1 = document.getElementById('ans1')
   answer1.innerText = question1
 
-  let question2 = window.prompt('Which appetizer do you prefer')
-  let answer2 = document.getElementById('quest2')
+  let answer2 = document.getElementById('ans2')
   answer2.innerText = question2
 
-  let question3 = window.prompt ('Which drink do you prefer')
-  let answer3 = document.getElementById('quest3')
+  let answer3 = document.getElementById('ans3')
   answer3.innerText = question3
 
-  let question4 = window.prompt ('Which dessert do you prefer')
-  let answer4 = document.getElementById('quest4')
+  let answer4 = document.getElementById('ans4')
   answer4.innerText = question4
 
   let quizButton = document.querySelector(".quiz")
   quizButton.addEventListener("click", () => {
-    if(answer1 === 'pizza' && answer2 === 'breadstick' && answer3 === 'wine' && answer4 === 'zepoles') {
-      console.log('Hmm, You may be Italian !')
+    let lastAnswer = document.querySelector(".finalAnswer")
+    function displayAnswer () {
+
+    if((answer1 === 'Pizza' && answer2 === 'Breadstick') && (answer3 === 'Wine' && answer4 === 'Zepoles')) {
+      lastAnswer.push('Hmm, You may be Italian !')
+    }else if ((answer1 === 'Hamburger' && answer2 === 'Buffalo Wings') && (answer3 === 'Cocal Cola' && answer4 === 'Funnel Cake')) {
+      console.log('Hmm, You may be an American !');
+      }
     }
   })
 
