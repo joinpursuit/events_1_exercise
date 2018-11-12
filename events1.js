@@ -1,71 +1,196 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // window.alert('The page has loaded')
+// document.addEventListener("DOMContentLoaded", () => {
+//   // window.alert('The page has loaded')
+//
+//   let quizButton = document.querySelector(".submitButton")
+//   quizButton.addEventListener("click", () => {
+//
+//     let question1 = document.quiz.question1.value;
+//     let question2 = document.quiz.question2.value;
+//     let question3 = document.quiz.question3.value;
+//     let question4 = document.quiz.question4.value;
+//     let count = 0;
+//
+//     if((question1 === 'Pizza' && question2 === 'Breadsticks') && (question3 === 'Wine' && question4 === 'Zepoles')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "You got Italian"
+//
+//     if((question1 === 'Hamburger' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "You got American"
+//
+//     if((question1 === 'Quesadilla' && question2 === 'Nachos') && (question3 === 'Jarritos' && question4 === 'Churros')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "You got Mexican"
+//
+//     if((question1 === 'Mofongo' && question2 === 'Fritura') && (question3 === 'Malta' && question4 === 'Habichuela Con Dulce')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "You got Dominican"
+//
+//     if((question1 === 'Pizza' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "Hmm, you seem to be Italian & American !"
+//
+//     if((question1 === 'Hamburger' && question2 === 'Nachos') && (question3 === 'Malta' && question4 === 'Churros')) {
+//       count++
+//     }
+//
+//     document.getElementById("afterSubmit").style.visibility = "visible";
+//     document.getElementById("corrected").innerHTML = "I see you got some American, Mexican & Dominican flavors in you"
+//
+// })
+//
+//
+//
+//
+//
+//   let button = document.querySelector(".buttons")
+//   button.addEventListener("click", () => {
+//     let count = document.querySelectorAll(".countdown")
+//
+//     let changes = document.querySelector(".jack-hiding")
+//
+//     function changeImage (node){
+//       node.classList.add("changes")
+//     }
+//
+//     function countDown() {
+//       count[0].innerText = count[0].innerText - 1
+//     }
+//
+//
+//     let down = window.setInterval(countDown, 1000)
+//
+//     setTimeout(() =>{
+//       clearInterval(down)
+//       changeImage(changes);
+//     }, 5000)
+//
+//   })
+//
+//
+//
+// })
 
 
-  let answer1 = document.getElementById('ans1')
-  answer1.innerText = question1
-
-  let answer2 = document.getElementById('ans2')
-  answer2.innerText = question2
-
-  let answer3 = document.getElementById('ans3')
-  answer3.innerText = question3
-
-  let answer4 = document.getElementById('ans4')
-  answer4.innerText = question4
-
-  let quizButton = document.querySelector(".quiz")
-  quizButton.addEventListener("click", () => {
-    let lastAnswer = document.querySelector(".finalAnswer")
-    function displayAnswer () {
-
-    if((answer1 === 'Pizza' && answer2 === 'Breadstick') && (answer3 === 'Wine' && answer4 === 'Zepoles')) {
-      lastAnswer.push('Hmm, You may be Italian !')
-    }else if ((answer1 === 'Hamburger' && answer2 === 'Buffalo Wings') && (answer3 === 'Cocal Cola' && answer4 === 'Funnel Cake')) {
-      console.log('Hmm, You may be an American !');
-      }
-    }
-  })
 
 
-  let button = document.querySelector(".buttons")
-  button.addEventListener("click", () => {
-    let count = document.querySelectorAll(".countdown")
+function check () {
+  let question1 = document.quiz.question1.value;
+  let question2 = document.quiz.question2.value;
+  let question3 = document.quiz.question3.value;
+  let question4 = document.quiz.question4.value;
+  let count = 0;
 
-    let changes = document.querySelector(".jack-hiding")
+  if((question1 === 'Pizza' && question2 === 'Breadsticks') && (question3 === 'Wine' && question4 === 'Zepoles')) {
+    count++
+  }
 
-    function changeImage (node){
-      node.classList.add("changes")
-    }
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "You got Italian"
 
-    function countDown() {
-      count[0].innerText = count[0].innerText - 1
-    }
+  if((question1 === 'Hamburger' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+    count++
+  }
 
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "You got American"
 
-    let down = window.setInterval(countDown, 1000)
+  if((question1 === 'Quesadilla' && question2 === 'Nachos') && (question3 === 'Jarritos' && question4 === 'Churros')) {
+    count++
+  }
 
-    setTimeout(() =>{
-      clearInterval(down)
-      changeImage(changes);
-    }, 5000)
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "You got Mexican"
 
+  if((question1 === 'Mofongo' && question2 === 'Fritura') && (question3 === 'Malta' && question4 === 'Habichuela Con Dulce')) {
+    count++
+  }
 
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "You got Dominican"
 
-  })
+  if((question1 === 'Pizza' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+    count++
+  }
 
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "Hmm, you seem to be Italian & American !"
 
+  if((question1 === 'Pizza' && question2 === 'Breadsticks') && (question3 === 'Wine' && question4 === 'Zepoles')) {
+    count++
+  }
+
+  document.getElementById("afterSubmit").style.visibility = "visible";
+  document.getElementById("corrected").innerHTML = "You got Italian"
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-})
+// let quizButton = document.querySelector(".submitButton")
+// quizButton.addEventListener("click", () => {
+//
+//   let question1 = document.quiz.question1.value;
+//   let question2 = document.quiz.question2.value;
+//   let question3 = document.quiz.question3.value;
+//   let question4 = document.quiz.question4.value;
+//   let count = 0;
+//
+//   if((question1 === 'Pizza' && question2 === 'Breadsticks') && (question3 === 'Wine' && question4 === 'Zepoles')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "You got Italian"
+//
+//   if((question1 === 'Hamburger' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "You got American"
+//
+//   if((question1 === 'Quesadilla' && question2 === 'Nachos') && (question3 === 'Jarritos' && question4 === 'Churros')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "You got Mexican"
+//
+//   if((question1 === 'Mofongo' && question2 === 'Fritura') && (question3 === 'Malta' && question4 === 'Habichuela Con Dulce')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "You got Dominican"
+//
+//   if((question1 === 'Pizza' && question2 === 'Buffalo Wings') && (question3 === 'Coca Cola' && question4 === 'Funnel Cake')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "Hmm, you seem to be Italian & American !"
+//
+//   if((question1 === 'Hamburger' && question2 === 'Nachos') && (question3 === 'Malta' && question4 === 'Churros')) {
+//     count++
+//   }
+//
+//   document.getElementById("afterSubmit").style.visibility = "visible";
+//   document.getElementById("corrected").innerHTML = "I see you got some American, Mexican & Dominican flavors in you"
+//
+// })

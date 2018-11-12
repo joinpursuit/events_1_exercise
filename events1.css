@@ -12,4 +12,8 @@
   background-image: url("https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif");
 }
 
+#afterSubmit{
+  visibility: hidden;
+}
+
 Use this image for the revealed Jack: https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif
