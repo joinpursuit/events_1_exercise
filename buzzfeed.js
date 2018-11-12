@@ -75,16 +75,13 @@ console.log(griffindor,"after loop")
     if(griffindor === 2 || 3){
       griffindor = "Griffindor";
         document.getElementById("classIn").innerText = "you got" + " " + griffindor;
-    }
-    if(slytherin === 2 || 3){
+    }else if(slytherin === 2 || 3){
       slytherin = "Slytherin";
       document.getElementById("classIn").innerText = "you got" + " " + slytherin;
-    }
-    if(hufflePuff === 2 || 3){
+    }else if(hufflePuff === 2 || 3){
       hufflePuff === "HufflePuff";
         document.getElementById("classIn").innerText = "you got" + " " + hufflePuff;
-    }
-    if(ravenClaw === 2 || 3){
+    }else if(ravenClaw === 2 || 3){
       ravenClaw === "RavenClaw"
       document.getElementById("classIn").innerText = "you got" + " " + ravenClaw;
     }
