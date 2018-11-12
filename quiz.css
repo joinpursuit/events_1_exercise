@@ -1,0 +1,9 @@
+.question {
+  font-weight: bold;
+  color: violet;
+  margin-bottom: 10px;
+}
+
+.anime_manga, .cat_or_dog, .ice_cream, .onions, .candy_Corn, .early_Riser {
+  margin-bottom: 100px;
+}
