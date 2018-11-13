@@ -8,8 +8,9 @@
   </head>
   <body>
 
-    <form class="quiz" name="quiz" >
-      <h1>Where are you from</h1>
+    <div class="whole-quiz">
+    <form class="quiz" name="quiz" onsubmit="return false;">
+      <h2>Determine where you might be from based on food choices</h2>
             <ol class="listing">
 
               <div id="ans1">
@@ -29,7 +30,8 @@
 
               <br>
 
-              <div id="ans2"        <p>Which appetizer do you prefer</p>
+              <div id="ans2">
+              <p>Which appetizer do you prefer</p>
               <li>
                 <input type="radio" id="quest" name="question2"
                 value="Breadsticks">Breadsticks</input>
@@ -87,7 +89,8 @@
             </ol>
 
             <!-- <input class="quiz" type="button" value="Submit Quiz" onclick="check();"> -->
-            <button class="quiz" type="button" value="Submit Quiz" name="button" onclick="check()">Submit Quiz</button>
+
+            <input class="quizSubmit" type="submit" value="Submit Quiz" name="button">
 
 
 
@@ -95,6 +98,7 @@
 
     <div id="afterSubmit">
       <p id="corrected"></p>
+    </div>
     </div>
 
 
