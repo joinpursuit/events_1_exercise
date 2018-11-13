@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Buzzfeed Quiz</h1>
+    <div id="quizHolder">
+          <form id="form" action="index.html" method="post">
+              <p>What type of personality do you have?</p>
+              <input type="radio" name="question1" value="hufflePuff">kind <br />
+              <input type="radio" name="question1" value="slytherin">aggressive <br />
+              <input type="radio" name="question1" value="griffindor">adventerous <br />
+              <input type="radio" name="question1" value="ravenClaw">studious <br />
+
+              <p>what seems more interesting to you?</p>
+              <input type="radio" name="question2" value="hufflePuff">helping others in need <br />
+              <input type="radio" name="question2" value="slytherin">only care about themselves <br />
+              <input type="radio" name="question2" value="griffindor">will explore to find an answer <br />
+              <input type="radio" name="question2" value="ravenClaw">will find an answer in the saftey of books and internet <br />
+
+              <p>what seems more appealing to you?</p>
+              <input type="radio" name="question3" value="hufflePuff">spending your free time volunteering <br />
+              <input type="radio" name="question3" value="slytherin">focusing on things you want to do <br />
+              <input type="radio" name="question3" value="griffindor">enjoy hiking <br />
+              <input type="radio" name="question3" value="ravenClaw">read a good science fiction book <br />
+              <br />
+              <input id="button" type="button" value="submit Form" onclick = "check();">
+
+          </form>
+          <div id="displayResults">
+            <p id="classIn"></p>
+
+
+          </div>
+    </div>
+<script src="./buzzfeed.js" type="text/javascript"></script>
+  </body>
+</html>
