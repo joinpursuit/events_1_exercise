@@ -1,0 +1,45 @@
+body {
+  background-color: #2e5aa0;
+}
+h1, h3 {
+  color: lightgreen;
+  text-align: center;
+}
+
+p {
+  margen: 20px;
+}
+.jack-hiding {
+  height: 500px;
+  width: 500px;
+  background-image: url("http://toysforprefer.com/wp-content/uploads/2018/01/classic-jester-jack-in-the-box-toy-regarding-jack-in-the-box-toy-closed.gif");
+  background-position: center;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.jack-is-here {
+  height: 500px;
+  width: 500px;
+  background-image: url("https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif");
+  background-position: center;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+button {
+  border: lightgreen solid 2px;
+  width: 200px;
+  height: 100px;
+  background-color: grey;
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
