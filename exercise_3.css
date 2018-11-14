@@ -1,14 +1,77 @@
 body {
-  display: flex;
   flex-direction: column;
   font-family: sans-serif;
-  background-color: lightyellow;
 }
 
-.title {
+#main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+h1 {
   font-size: 20px;
   font-weight: bold;
   padding: 30px;
   align-self: center;
+}
 
+.quiz {
+  background-color: #d2def2;
+  padding: 15px 15px 20px 30px;
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 30px;
+
+}
+
+p {
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+input {
+  margin-bottom: 8px;
+  margin-left:12px;
+}
+
+#button {
+  background: green;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  margin-top: 15px;
+  margin-left: 250px;
+
+}
+
+#button:hover {
+  background: white;
+  border:1px solid green;
+  color: black;
+  cursor: pointer;
+}
+
+#after_submit {
+  /* visibility: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #BF8F00;
+  padding: 10px;
+  width: 400px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+#pictures {
+
+  max-width: 300px;
+  max-height: 480px;
 }
