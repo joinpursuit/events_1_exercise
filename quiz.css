@@ -1,0 +1,11 @@
+.pokemon{
+  width: 500px;
+  height: 500px;
+  background-image: url('https://fontmeme.com/images/Pokemon-Logo.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
+.change{
+  background-image: url('http://static.pokemonpets.com/images/monsters-images-300-300/126-Magmar.png');
+}
