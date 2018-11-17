@@ -1,0 +1,66 @@
+body {
+  border: 2px solid gray;
+}
+ .a, .b, .c, .d {
+   text-align: center;
+ }
+.pollOne {
+  border: 2px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.pollTwo {
+  border: 2px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.pollThree {
+  border: 2px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.pollFour {
+  border: 2px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.jack-hiding {
+  margin-left: 30%;
+  height: 500px;
+  width: 500px;
+  background-image: url("http://toysforprefer.com/wp-content/uploads/2018/01/classic-jester-jack-in-the-box-toy-regarding-jack-in-the-box-toy-closed.gif");
+  background-position: center;
+  background-size: contain;
+}
+
+/* Use this image for the revealed Jack: */
+.jack-showing {
+  margin-left: 30%;
+  height: 500px;
+  width: 500px;
+  background-image:
+  url("https://static.tvtropes.org/pmwiki/pub/images/rsz_jitb.jpg");
+  background-position: center;
+  background-size: contain;
+  }
+
+  .jack-message {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .countdown {
+    text-align: center;
+
+  }
+
+  .creepy-text {
+    color: red;
+    font-family: 'Creepster', cursive;
+    font-size: 60px;
+    text-align: center;
+  }
