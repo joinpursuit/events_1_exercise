@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let count = 0;
 
+
+
   quiz.addEventListener('change', (event) => {
     count += Number(event.target.value);
   })
