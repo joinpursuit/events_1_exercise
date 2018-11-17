@@ -1,0 +1,23 @@
+.jack-hiding {
+  height: 500px;
+  width: 500px;
+  background-image: url("http://toysforprefer.com/wp-content/uploads/2018/01/classic-jester-jack-in-the-box-toy-regarding-jack-in-the-box-toy-closed.gif");
+  background-position: center;
+  background-size: contain;
+}
+.listing{
+  list-style: none;
+}
+.changes{
+  background-image: url("https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif");
+}
+
+#afterSubmit{
+  visibility: hidden;
+}
+
+.whole-quiz{
+  border-style: solid;
+  color: black;
+}
+Use this image for the revealed Jack: https://sep.yimg.com/ay/genius-babies/jester-jack-in-the-box-toy-25.gif
