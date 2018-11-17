@@ -6,43 +6,50 @@
 
   window.alert("Let's Find Out The Type of Crazy The Lives Inside of You by Taking A Random Ass Quiz That Does Not Really Test For Anything and The Two Are Totally Unrelated!!!  LET'S BEGIN!!!");
 
- let questions = [
-   {
-     prompt:"What first comes to my when you think cheese? \n 1: Eat it \n 2:Gross \n 3:I'm high right now so I could definitely eat some cheese \n 4: To get to the other side, Duh!",
-     answer: ""
-   },
-   {
-     prompt:"Why did the chicken cross the road? n\ 1: To laugh at the turkeys during holiday season....from afar! \n 2: To escape the annoying vegans telling everyone that they are vegans without anyone asking \n  3: Man...I'm wayyy too high for this.... \n 4: To get to the other side, Duh!",
-     answer: ""
-   },
-   {
-     prompt:"what is the meaning of life? \n 1: Life is what you make of it... \n 2:Fuck bitches, get money! \n 3: Please don't blow my high \n 4: It's more about the journey and the people you meet along the way",
-     answer: ""
-   },
-   {
-     prompt:"How much wood can a woodchuck chuck if a woodchuck could chuck wood \n 1: GTFOH with That Bullshit! \n 2: Who really comes up with this bullshit? \n 3: Great! You fucking blew my high! I still want cheese though \n 4: Hmmm...So many variables to consider... ",
-     answer: ""
-   }
+  document.addEventListener("DOMContentLoaded", () => {
+    let clicked = document.querySelector(".btn");
+    let form = document.querySelector(".idk")
+    let pollOne = document.querySelector('.pollOne')
+    let pollTwo = document.querySelector(".pollTwo")
+    let pollThree = document.querySelector(".pollThree")
+    let score = document.querySelector(".score")
+    let normal = document.querySelector(".normal")
+    let almost = document.querySelector(".almost")
+    let certified = document.querySelector(".certified")
+    let crazy = document.querySelector(".crazy")
+    let choiceOne = document.querySelector(".one")
+    let choiceTwo = document.querySelector(".two")
+    let choiceThree = document.querySelector(".three")
+    let choiceFour = document.querySelector(".four")
+    let choiceFive = document.querySelector(".five")
+    let choiceSix = document.querySelector(".six")
+    let choiceSeven = document.querySelector(".seven")
+    let choiceEight = document.querySelector(".eight")
+    let choiceNine = document.querySelector(".nine")
+    let choiceTen = document.querySelector(".ten")
+    let choiceEleven = document.querySelector(".eleven")
+    let choiceTwelve = document.querySelector(".twelve")
+    let a = document.querySelector(".a")
+    let b = document.querySelector(".b")
+    let c = document.querySelector(".c")
+    let d = document.querySelector(".d")
 
- ]
 
- let score = 0;
+      clicked.addEventListener("click", () => {
 
- for(let i = 0; i < questions.length; i++){
-   let response = window.prompt(questions[i].prompt)
-   if(response === "1"){
-     document.querySelector(".a").innerText++;
-   }
-   if(response === "2"){
-     document.querySelector(".b").innerText++;
-   }
-   if(response === "3"){
-     document.querySelector(".c").innerText++
-   }
-   if(response === "4"){
-     document.querySelector(".d").innerText++
-   }
- }
+      if (choiceOne.checked && choiceFive.checked && choiceNine.checked){
+        a.innerText++;
+        }
+       else if (choiceTwo.checked && choiceSix.checked && choiceTen.checked){
+        b.innerText++
+      } else if (choiceThree.checked && choiceSeven.checked && choiceEleven.checked){
+        c.innerText++
+      } else if (choiceThree.checked && choiceEight.check && choiceTwelve.checked){
+        d.innerText++
+      }
+    })
+  })
+
 
 
 // let button = document.querySelector(".wind-up")
